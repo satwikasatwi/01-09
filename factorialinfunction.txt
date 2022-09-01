@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+    int n,ans;
+    printf("enter a num:");
+    scanf("%d",&n);
+    ans=fact(n);
+    printf("\n factorial value is %d",ans);
+}
+int fact(int x)
+{
+    int i,fact=1;
+    for(i=1;i<=x;i++)
+    {
+        fact=fact*i;
+    }
+    return(fact);
+}
+OUTPUT:-
+enter a num:5
+factorial value is 120
